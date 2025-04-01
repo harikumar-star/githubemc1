@@ -1,3 +1,4 @@
 dummyt
 is hte dummy file new changes
 getting the cnew changes
+sample of fetch operation
