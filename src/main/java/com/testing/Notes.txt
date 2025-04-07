@@ -1,0 +1,21 @@
+Summary of Security Enhancements
+====================================
+Issue	Fix
+Hardcoded credentials	Use environment variables
+Generic exception handling	Catch specific exceptions
+Uncapped exponential backoff	Limit retry delay to 5 seconds
+Sensitive data logging	Mask email addresses in logs
+Unencrypted attachments	Encrypt PDFs before sending
+Email header injection risk	Validate email format
+
+
+
+
+==============================================
+App behaviour
++++++++++++++++++
+
+ Expected Behavior
+If the email server is temporarily unreachable, it retries up to 3 times.
+If authentication fails, it does not retry and exits immediately.
+If the error is unexpected (Exception), it still retries up to 3 times.
