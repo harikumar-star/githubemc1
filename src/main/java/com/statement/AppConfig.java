@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class AppConfig {
+    //first setup
     @Bean
     public BlockingQueue<byte[]> queue() {
         return new LinkedBlockingQueue<>();
